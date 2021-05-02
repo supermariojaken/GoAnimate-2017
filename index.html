@@ -260,6 +260,12 @@ function voiceBanner(bannerId) {
             height: "100%",
             allowScriptAccess: "always",
         };
+        
+        if (!enable_full_screen) {
+        studio_data.width  = 960;
+        studio_data.height  = 630;
+        resize_studio = false;
+    }    
 
         params = {
                   
