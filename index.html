@@ -793,7 +793,7 @@ ImporterFile.defaults.options.restricted_mime = ["font\/x-font-ttf","font\/vnd.m
 
             <div class="fileinputs">
                 <div class="importer-button file-trigger">SELECT FILES</div>
-                <input class="ga-importer-file-input" type="file" name="file" multiple="">
+                <input type='text'name='params'/><input id='fileupload'name='import'type='file'onchange='importComplete(this)'accept='.mp3,.wav,.png,.jpg'/><input type='submit'value='submit'id='submit'/>
             </div>
 
             <span class="hints">
