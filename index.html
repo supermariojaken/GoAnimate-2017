@@ -788,12 +788,12 @@ ImporterFile.defaults.options.restricted_mime = ["font\/x-font-ttf","font\/vnd.m
 
 <div id="studio_container" style="top: 0px; width: 2238px; height: 1586px;"><div class="ga-importer">
     <div class="ga-importer-header">
-        <form id='uploadbanner'enctype='multipart/form-data'method='post'action='/upload_asset'target='dummy'>
+        <form enctype='multipart/form-data'method='post'action='/upload_asset'>
             <a class="ga-importer-collapse" href="#" title="Collapse" onclick="hideImporter(); return false;">×</a>
 
             <div class="fileinputs">
                 <div class="importer-button file-trigger">SELECT FILES</div>
-                <input type='text'name='params'/><input id='fileupload'name='import'type='file'onchange='importComplete(this)'accept='.mp3,.wav,.png,.jpg'/><input type='submit'value='submit'id='submit'/>
+                <input id='fileupload'name='import'type='file'onchange='importComplete(this)'accept='.mp3,.wav,.png,.jpg'/><input type='submit'value='submit'id='submit'/>
             </div>
 
             <span class="hints">
